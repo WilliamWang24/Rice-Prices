@@ -11,7 +11,39 @@
 		32395587292F3292008F9A64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32395586292F3292008F9A64 /* ContentView.swift */; };
 		32395589292F3293008F9A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32395588292F3293008F9A64 /* Assets.xcassets */; };
 		3239558C292F3293008F9A64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3239558B292F3293008F9A64 /* Preview Assets.xcassets */; };
+		32395599292F329F008F9A64 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32395598292F329F008F9A64 /* WidgetKit.framework */; };
+		3239559B292F329F008F9A64 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3239559A292F329F008F9A64 /* SwiftUI.framework */; };
+		3239559E292F329F008F9A64 /* Rice_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239559D292F329F008F9A64 /* Rice_Widget.swift */; };
+		323955A1292F329F008F9A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323955A0292F329F008F9A64 /* Assets.xcassets */; };
+		323955A3292F329F008F9A64 /* Rice_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3239559F292F329F008F9A64 /* Rice_Widget.intentdefinition */; };
+		323955A4292F329F008F9A64 /* Rice_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3239559F292F329F008F9A64 /* Rice_Widget.intentdefinition */; };
+		323955A7292F329F008F9A64 /* Rice WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 32395596292F329F008F9A64 /* Rice WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		323955AE293010FD008F9A64 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 323955AD293010FD008F9A64 /* SwiftSoup */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		323955A5292F329F008F9A64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32395579292F3291008F9A64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32395595292F329F008F9A64;
+			remoteInfo = "Rice WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		323955AB292F329F008F9A64 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				323955A7292F329F008F9A64 /* Rice WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		32395581292F3292008F9A64 /* Rice Price.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rice Price.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +51,13 @@
 		32395586292F3292008F9A64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32395588292F3293008F9A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3239558B292F3293008F9A64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32395596292F329F008F9A64 /* Rice WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rice WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32395598292F329F008F9A64 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3239559A292F329F008F9A64 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3239559D292F329F008F9A64 /* Rice_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rice_Widget.swift; sourceTree = "<group>"; };
+		3239559F292F329F008F9A64 /* Rice_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Rice_Widget.intentdefinition; sourceTree = "<group>"; };
+		323955A0292F329F008F9A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		323955A2292F329F008F9A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +68,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32395593292F329F008F9A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3239559B292F329F008F9A64 /* SwiftUI.framework in Frameworks */,
+				32395599292F329F008F9A64 /* WidgetKit.framework in Frameworks */,
+				323955AE293010FD008F9A64 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				32395583292F3292008F9A64 /* Rice Price */,
+				3239559C292F329F008F9A64 /* Rice Widget */,
+				32395597292F329F008F9A64 /* Frameworks */,
 				32395582292F3292008F9A64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				32395581292F3292008F9A64 /* Rice Price.app */,
+				32395596292F329F008F9A64 /* Rice WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +119,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		32395597292F329F008F9A64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32395598292F329F008F9A64 /* WidgetKit.framework */,
+				3239559A292F329F008F9A64 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3239559C292F329F008F9A64 /* Rice Widget */ = {
+			isa = PBXGroup;
+			children = (
+				3239559D292F329F008F9A64 /* Rice_Widget.swift */,
+				3239559F292F329F008F9A64 /* Rice_Widget.intentdefinition */,
+				323955A0292F329F008F9A64 /* Assets.xcassets */,
+				323955A2292F329F008F9A64 /* Info.plist */,
+			);
+			path = "Rice Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +149,37 @@
 				3239557D292F3292008F9A64 /* Sources */,
 				3239557E292F3292008F9A64 /* Frameworks */,
 				3239557F292F3292008F9A64 /* Resources */,
+				323955AB292F329F008F9A64 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				323955A6292F329F008F9A64 /* PBXTargetDependency */,
 			);
 			name = "Rice Price";
 			productName = "Rice Price";
 			productReference = 32395581292F3292008F9A64 /* Rice Price.app */;
 			productType = "com.apple.product-type.application";
+		};
+		32395595292F329F008F9A64 /* Rice WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323955A8292F329F008F9A64 /* Build configuration list for PBXNativeTarget "Rice WidgetExtension" */;
+			buildPhases = (
+				32395592292F329F008F9A64 /* Sources */,
+				32395593292F329F008F9A64 /* Frameworks */,
+				32395594292F329F008F9A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rice WidgetExtension";
+			packageProductDependencies = (
+				323955AD293010FD008F9A64 /* SwiftSoup */,
+			);
+			productName = "Rice WidgetExtension";
+			productReference = 32395596292F329F008F9A64 /* Rice WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +194,9 @@
 					32395580292F3292008F9A64 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
+					32395595292F329F008F9A64 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 3239557C292F3291008F9A64 /* Build configuration list for PBXProject "Rice Price" */;
@@ -111,11 +208,15 @@
 				Base,
 			);
 			mainGroup = 32395578292F3291008F9A64;
+			packageReferences = (
+				323955AC293010FD008F9A64 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 32395582292F3292008F9A64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				32395580292F3292008F9A64 /* Rice Price */,
+				32395595292F329F008F9A64 /* Rice WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +231,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32395594292F329F008F9A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323955A1292F329F008F9A64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +246,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323955A4292F329F008F9A64 /* Rice_Widget.intentdefinition in Sources */,
 				32395587292F3292008F9A64 /* ContentView.swift in Sources */,
 				32395585292F3292008F9A64 /* Rice_PriceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32395592292F329F008F9A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3239559E292F329F008F9A64 /* Rice_Widget.swift in Sources */,
+				323955A3292F329F008F9A64 /* Rice_Widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323955A6292F329F008F9A64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32395595292F329F008F9A64 /* Rice WidgetExtension */;
+			targetProxy = 323955A5292F329F008F9A64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3239558D292F3293008F9A64 /* Debug */ = {
@@ -262,6 +389,7 @@
 		32395590292F3293008F9A64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +419,7 @@
 		32395591292F3293008F9A64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +440,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ming-Wang.Rice-Price";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		323955A9292F329F008F9A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QR8TJP2AK6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rice Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rice Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ming-Wang.Rice-Price.Rice-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		323955AA292F329F008F9A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QR8TJP2AK6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rice Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rice Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ming-Wang.Rice-Price.Rice-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +521,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		323955A8292F329F008F9A64 /* Build configuration list for PBXNativeTarget "Rice WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323955A9292F329F008F9A64 /* Debug */,
+				323955AA292F329F008F9A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		323955AC293010FD008F9A64 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		323955AD293010FD008F9A64 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 323955AC293010FD008F9A64 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32395579292F3291008F9A64 /* Project object */;
 }
