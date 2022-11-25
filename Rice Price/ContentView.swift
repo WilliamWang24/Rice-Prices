@@ -1,12 +1,4 @@
-//
-//  ContentView.swift
-//  Rice Price
-//
-//  Created by William Wang on 11/24/22.
-//
-
 import SwiftUI
-
 struct ContentView: View {
     @Environment(\.openURL) var openURL
     var body: some View {
@@ -56,12 +48,11 @@ struct ContentView: View {
                     .font(.title2)
                     .padding(.bottom, 5)
                 Button("🌟 Star on GitHub") {
-                    openURL(URL(string: "https://github.com/scinfu/SwiftSoup")!)
+                    openURL(URL(string: "https://github.com/WilliamWang24/Rice-Prices")!)
                 }
                 .buttonStyle(.bordered)
                 .tint(.green)
             }
-            
 
             Spacer()
             
@@ -70,7 +61,7 @@ struct ContentView: View {
                     .bold()
                     .padding(.bottom, 1)
                 Button {
-                    openURL(URL(string: "https://markets.businessinsider.com")!)
+                    openURL(URL(string: "https://github.com/WilliamWang24/Rice-Prices")!)
                 } label: {
                     HStack {
                         Image("github")
@@ -82,9 +73,7 @@ struct ContentView: View {
                             .underline()
                     }
                 }
-               
             }
-            
         }
         .padding()
     }
@@ -98,20 +87,18 @@ struct ContentView_Previews: PreviewProvider {
 
 struct textView: View {
     let color: Color
-    let title:String
-    let substitle:String
+    let title: String
+    let substitle: String
     let bodyText: String
     var body: some View {
         Text(substitle)
             .font(.title3)
             .fontWeight(.semibold)
             .foregroundColor(color)
-      
         Text(title)
             .bold()
             .font(.title)
             .padding(.bottom, 5)
-        
         Text(bodyText)
     }
 }
